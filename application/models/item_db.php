@@ -12,6 +12,7 @@ class Item_db extends CI_Model
 		$this->load->database();
 
 	}
+	
 	public function get_item_list()
 	{
 		$this->db->select("*");
