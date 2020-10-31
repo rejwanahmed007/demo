@@ -17,14 +17,14 @@ class Item_db extends CI_Model
 		$this->db->select("*");
 		$this->db->from("items");
 
-		$result = $this->db->get()->result_array();
+		$result = $this->db->get()->result();
 
 		// echo $result;
 
 		if(count($result)>0)
 		{
 			return $result;
-			
+
 		}
 	}
 

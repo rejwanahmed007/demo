@@ -24,19 +24,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script>
 	$(document).ready(function()
 	{
+		get_item_list();
 		$('#item_menu').html('<table border = "1"  cellspacing="5" cellpadding="10" style="border-collapse: collapse;"><tr> <td> SL </td> <td> Item </td> <td> Model Name </td> <td> Brand Name </td> <td> Entry Date </td> <td> Action </td></tr> </table>');
 
 
-		$.ajax
-		({
-			  	type : "POST",
-               	url  : "get_item_list",
-         		dataType: 'json',
-		         success: function(response){
-		         	 $('#item_menu').html('Hello')
-         		}
-		});
 	});
+	function get_item_list()
+	{
+		alert("hello");
+		$.ajax({
+               type : "POST",
+               url  : "<?php echo base_url();?>inventory/get_item_list",
+         			dataType: 'json',
+		         success: function(response){
+		         	alert(response);
+
+         		}
+
+            });
+	}
 
 </script>
 </html>
