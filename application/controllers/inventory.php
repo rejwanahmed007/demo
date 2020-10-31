@@ -10,6 +10,7 @@ class Inventory extends CI_Controller {
 		$this->load->model("item_db");
 
 	}
+	
 	public function index()
 	{
 
