@@ -4,8 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
 <head>
-
-	<title>Inventory Management System</title>
+	<title>INVENTORY MANAGEMENT SYSTEM</title>
 
 	<script src="<?php echo base_url();?>asset/jquery/jquery-3.4.1.min.js"></script>
 	<script src="<?php echo base_url();?>asset/jquery_ui/jquery-ui.min.js"></script>
@@ -14,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 	<center><h1>Welcome to Inventory Management System</h1>
 	<nav>
-		<a  href="<?php echo base_url();?>brand">Brand</a> <!-- //need to work -->
+		<a  href="<?php echo base_url();?>brand">Brand</a> <!-- //TODO:need to work -->
 	  	<a href="<?php echo base_url();?>modelitem">Model</a> <!-- //need to work -->
 	  	<a href="<?php echo base_url();?>">Item</a> <!-- working -->
 	</nav>
@@ -39,13 +38,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          		}
 
             });
-
-
-
 	});
 	function get_item_list(response)
 	{
 		// alert("hello");
+	 // NOTE: incomplete
+	 // TODO: further work
 		$('#item_menu').html('<table border = "1"  cellspacing="5" cellpadding="10" style="border-collapse: collapse;"><tr> <td> SL </td> <td> Item </td> <td> Model Name </td> <td> Brand Name </td> <td> Entry Date </td> <td> Action </td></tr> </table>');
 
 	}
