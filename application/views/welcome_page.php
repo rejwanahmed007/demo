@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<title>INVENTORY MANAGEMENT SYSTEM</title>
 
-	<script src="<?php echo base_url();?>asset/jquery/jquery-3.4.1.min.js"></script>
+	<script src="<?php echo base_url();?>asset/jquery/jquery-3.5.1.min.js"></script>
 	<script src="<?php echo base_url();?>asset/jquery_ui/jquery-ui.min.js"></script>
 
 </head>
