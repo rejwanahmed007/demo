@@ -14,7 +14,9 @@ class Jquery extends CI_Controller {
 			// $this->load->view('jquery/ajaxComplete');
 			// $this->load->view('jquery/serialize');
 			// $this->load->view('jquery/serializeArray');
-			$this->load->view('jquery/jquery_get');
+			// $this->load->view('jquery/jquery_get');
+			$this->load->view('jquery/checked_Selector');
+
 		}
 
 	}
