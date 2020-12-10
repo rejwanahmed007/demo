@@ -51,6 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['upload-image'] = 'imageuploadcontroller';
 $route['store-image'] = 'imageuploadcontroller/store';
-$route['default_controller'] = 'modal';
+$route['default_controller'] = 'upload_controller/custom_view';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

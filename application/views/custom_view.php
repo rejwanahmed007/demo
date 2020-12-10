@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>CodeIgniter Image Upload</title>
@@ -18,5 +18,18 @@
                 <input type="submit" value="Upload Image" />
             </form>
     </div>
+</body>
+</html> -->
+
+<html>
+<head>
+    <title>File Upload In Codeigniter</title>
+</head>
+<body>
+<?php echo $error;?>
+<?php echo form_open_multipart('upload_controller/do_upload');?>
+<?php echo "<input type='file' name='userfile' size='20' />"; ?>
+<?php echo "<input type='submit' name='submit' value='upload' /> ";?>
+<?php echo "</form>"?>
 </body>
 </html>
